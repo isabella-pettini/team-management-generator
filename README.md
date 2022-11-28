@@ -1,26 +1,36 @@
-# team-management-generator
+# Team Management Generator
+![License](https://img.shields.io/badge/license-MIT-green)
 
+## Description
+This team management generator will help you keep track of your team. This command line application will get required input from the user and generate a clean and simple html page.
 
-User Story
-AS A manager
-I WANT to generate a webpage that displays my team's basic info
-SO THAT I have quick access to their emails and GitHub profiles
+## Table Of Contents 
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
-Acceptance Criteria
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for my team members and their information
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
-WHEN I click on an email address in the HTML
-THEN my default email program opens and populates the TO field of the email with the address
-WHEN I click on the GitHub username
-THEN that GitHub profile opens in a new tab
-WHEN I start the application
-THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
-WHEN I enter the team manager’s name, employee ID, email address, and office number
-THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
-WHEN I select the engineer option
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
-WHEN I select the intern option
-THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
-WHEN I decide to finish building my team
-THEN I exit the application, and the HTML is generated
+## Installation
+Git clone this repo, run node index.js from the integrated vs code terminal, answer the prompts and look for your html file in the src folder.
+
+## Usage
+Keeping track of your ever evolving team can require a lot of time and effort. This easy to use command line application will allow you to keep track of your team by choosing their role, entering their name, and their employee ID. Your Manager role will allow you to keep track of their office numbers. Your Engineer role will allow you to keep track of their GitHub account and your Intern role will allow you to keep track of the school they are currently enrolled in or graduated from. Once you have answered all of the prompts and no longer have employees to add, your HTML file will be generated in the src folder where you can preview the page and code before deployment. This way you and your employees can have the vital contact information needed when collaborating in office or from home.
+
+## License
+This project is covered under the MIT license. Please refer to this link to read the license, permissions, conditions and limitations.
+[License: MIT](https://choosealicense.com/licenses/mit/)
+
+## Contributing
+N/A
+
+## Tests
+You can run the test files using Jest, in vscode, run the integrated terminal and type 'npm run test'.
+
+## Questions
+Please reach me by GitHub or Email below with any additional questions about this project:
+
+GitHub: https://github.com/isabella-pettini
+
+Email:  isabellapierce93@gmail.com
