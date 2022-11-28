@@ -181,7 +181,7 @@ managerInput()
 .then(data => {
     const htmlPage = htmlTemplate(data)
 
-    fs.writeFile("./src/index.html", htmlPage, err => {
+    fs.writeFile("./dist/index.html", htmlPage, err => {
         if (err) {
             console.log(err);
             return;
