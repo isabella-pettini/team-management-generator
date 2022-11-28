@@ -1,6 +1,5 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const pageTemplate = require('./src/page-template.js');
 const employee = require('./lib/employee.js');
 const engineer = require('./lib/engineer.js');
 const intern = require('./lib/intern.js');
@@ -8,6 +7,7 @@ const manager = require('./lib/manager.js');
 const Manager = require('./lib/manager.js');
 const Engineer = require('./lib/engineer.js');
 const Intern = require('./lib/intern.js');
+const htmlTemplate = require('./src/page-template.js');
 
 const newEmployee = [];
 
@@ -167,10 +167,8 @@ const teamMenu = function () {
 
         if(role === "Engineer") {
             employee = new Engineer(name, id, email, github);
-            console.log(employee);
         } else if(role === "Intern") {
             employee = new Intern(name, id, email, school);
-            console.log(employee);
         }
         newEmployee.push(employee);
 
@@ -185,9 +183,9 @@ const teamMenu = function () {
 managerInput()
 .then(teamMenu)
 .then(data => {
-    const HTML = pageTemplate(data)
+    const htmlPage = htmlTemplate(data)
 
-    fs.writeFile("./src/index.html", HTML, err => {
+    fs.writeFile("./src/index.html", htmlPage, err => {
         if (err) {
             console.log(err);
             return;
