@@ -1,9 +1,5 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const employee = require('./lib/employee.js');
-const engineer = require('./lib/engineer.js');
-const intern = require('./lib/intern.js');
-const manager = require('./lib/manager.js');
 const Manager = require('./lib/manager.js');
 const Engineer = require('./lib/engineer.js');
 const Intern = require('./lib/intern.js');
@@ -56,10 +52,10 @@ return inquirer.prompt([
     {
         // Office Number for manager
         type: "input",
-        name: "office",
+        name: "officeNumber",
         message: "Please enter the manager's office number.",
-        validate: office => {
-            if (office) {
+        validate: officeNumber => {
+            if (officeNumber) {
                 return true;
             } else {
                 console.log("Please enter an office number.");
